@@ -1,0 +1,5 @@
+    <resources>
+        <string name="app_name">TiendaDeRopa</string>
+        <string name="clothing_image_desc">Imagen de la prenda</string>
+        <!-- Agrega aquí otras cadenas que necesites -->
+    </resources>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E1"
+    tools:context=".MainActivity">
+
+    <!-- Title of the Store -->
+    <TextView
+        android:id="@+id/storeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tienda de Ropa"
+        android:textSize="24sp"
+        android:textColor="#D81B60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Buttons for Adding and Editing Clothing -->
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/storeTitle"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnAddClothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Prenda"
+            android:backgroundTint="#FFC1E3"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEditClothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Prenda"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#FF4081"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Dashboard to Show Clothing Images -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewClothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonContainer"
+        android:layout_marginTop="27dp"
+        android:padding="10dp" />
+</RelativeLayout>

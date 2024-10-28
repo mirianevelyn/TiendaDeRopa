@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#D4A6E1"
+    android:backgroundTint="#E38888">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Agregar Prenda"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Código"
+        android:textAlignment="center"
+        android:textColor="#0C0000"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputCode"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Nombre"
+        android:textAlignment="center"
+        android:textColor="#0C0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputName"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Talla"
+        android:textAlignment="center"
+        android:textColor="#0C0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputSize"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Precio"
+        android:textAlignment="center"
+        android:textColor="#0C0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPrice"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Stock"
+        android:textAlignment="center"
+        android:textColor="#0C0000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageClothing"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/inputStock"
+        android:layout_marginTop="20dp"
+        android:background="#DDDDDD"
+        android:contentDescription="Imagen de la prenda"
+        android:scaleType="fitStart" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageClothing"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:text="Seleccionar Imagen" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageClothing"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnSelectImage"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageClothing"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnSave"
+        android:text="Volver" />
+
+</RelativeLayout>
